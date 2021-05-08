@@ -1,8 +1,25 @@
 function arrayMadness(a, b) {
-    for (i = 0; i > a.length; i++) {
-
+  let kvadratas = 0;
+  let kubas = 0;
+    for (i = 0; i < a.length; i++) {
+    const element = a[i]
+    kvadratas += element * element;
     }
-  }
+
+
+    for (let i = 0; i < b.length ; i++)  {
+      const element = b[i]
+      kubas += element * element * element;
+    }
+
+    if (kvadratas > kubas) {
+      return true;
+    } else {
+      return false};
+  
+    } 
+    
+  
 
 
   console.log(arrayMadness([4,5,6],[1,2,3]), true);
